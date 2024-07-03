@@ -52,7 +52,7 @@ async def cancel_savat(message: types.Message):
     tg_id = message.from_user.id
     tg_id = int(tg_id)
     checkid = await db.see_SuperAdmin(tg_id)
-    if tg_id == 5419118871:
+    if tg_id == 2139896417:
         await bot.send_message(tg_id, "Bosh menyuga qaytingiz Admin.", reply_markup=AdminMain_menu)
     elif tg_id == checkid:
         await bot.send_message(tg_id, "Bosh menyuga qaytingiz Admin.", reply_markup=AdminMain_menu)

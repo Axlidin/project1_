@@ -21,7 +21,7 @@ async def Statistika_function(message: types.Message):
     )
     tg_id = int(tg_id)
     checkid = await db.see_SuperAdmin(tg_id)
-    if tg_id == 5419118871:
+    if tg_id == 2139896417:
         await bot.send_message(tg_id, message, reply_markup=AdminMain_menu)
     elif tg_id == checkid:
         await bot.send_message(tg_id, message, reply_markup=AdminMain_menu)
@@ -29,7 +29,7 @@ async def Statistika_function(message: types.Message):
 @dp.message_handler(text="➕ Superadmin")
 async def add_superadmin(message: types.Message):
     tg_id = message.from_user.id
-    if tg_id == 5419118871:
+    if tg_id == 2139896417:
         await message.answer("Assalomu alaykum Bot creator, Yangi superAdmin ismini kiriting")
         await AddSuperadmin.next()
     else:
@@ -76,7 +76,7 @@ async def Statistika_function(message: types.Message):
     )
     tg_id = int(tg_id)
     checkid = await db.see_SuperAdmin(tg_id)
-    if tg_id == 5419118871:
+    if tg_id == 2139896417:
         await bot.send_message(tg_id, message, reply_markup=AdminMain_menu)
     elif tg_id == checkid:
         await bot.send_message(tg_id, message, reply_markup=AdminMain_menu)

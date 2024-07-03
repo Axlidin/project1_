@@ -7,7 +7,7 @@ from loader import dp, bot, db
 async def bot_start(message: types.Message):
     tg_id = message.from_user.id
     checkid = await db.see_SuperAdmin(tg_id)
-    if tg_id == 5419118871 or tg_id == checkid:
+    if tg_id == 2139896417 or tg_id == checkid:
         await message.answer(f"Assalomu alaykum admin: {message.from_user.full_name}",
                              reply_markup=AdminMain_menu)
     else:
